@@ -5,3 +5,5 @@ Metadata:
 * Project: put a project name here
 * What type of thing is this: question | task
 * Does this apply to a region: Africa | Global | NA | LA | EU
+
+Okay. You're good to go. Tell us what you need help with below. 
