@@ -22,7 +22,7 @@
 </thead>
 <tbody sheetsu="https://sheetsu.com/apis/v1.0su/ef8538ab4328" sheetsu-limit="20" sheetsu-ignore-case="true">
 <tr>
-<td>{{Timestamp}}</td>
+<td>{{timestamp}}</td>
 <td>{{title}}</td>
 <td>{{Status}}</td>
 <td><a href="https://aurl.org/{{Timestamp}}&{{title}}">Click here</a></td>
@@ -63,7 +63,7 @@
     }
 
     function tableRow() {
-        return '<td>{{Timestamp}}</td><td>{{title}}</td><td>{{Supply Status}}</td><td><a href="https://aurl.org/{{Timestamp}}&{{title}}">Click here</a></td>';
+        return '<td>{{timestamp}}</td><td>{{title}}</td><td>{{status}}</td><td><a href="https://aurl.org/{{timestamp}}&{{title}}">Click here</a></td>';
     }
 
     function debounce(func, wait, immediate) {
