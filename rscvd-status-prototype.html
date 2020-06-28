@@ -4,7 +4,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Embedable OAB Dev</title>
+    <title>RSCVD Status Prototype</title>
     <link rel="icon" href="/playground/favicon.ico" type="image/x-icon" />
   </head>
 
@@ -13,23 +13,15 @@
 <p><input type="text" id="date" placeholder="search by year (e.g 2015)" value="" onkeydown="myFunc()"></p>
 <table width=100%>
 <thead>
-<th><b>Institution/<br />Consortium</b></th>
 <th><b>Date</b></th>
-<th><b>Region</b></th>
-<th><b>Publisher(s)</b></th>
-<th><b>Strategic Considerations</b></th>
-<th><b>Outcome</b></th>
-<th><b>Estimated Annual Savings (USD)</b></th>
+<th><b>Title</b></th>
+<th><b>Cancel</b></th>
 </thead>
-<tbody sheetsu="https://sheetsu.com/apis/v1.0/18482d70bb03" sheetsu-limit="80" sheetsu-ignore-case="true">
+<tbody sheetsu="https://sheetsu.com/apis/v1.0su/4678577f0569" sheetsu-limit="80" sheetsu-ignore-case="true">
 <tr>
-<td><a {{href}}>{{institution}}</a></td>
-<td>{{date}}</td>
-<td>{{region}}</td>
-<td>{{publisher}}</td>
-<td>{{considerations}}</td>
-<td>{{outcome}}</td>
-<td>{{savings}}</td>
+<td>{{Timestamp}}</td>
+<td>{{title}}</td>
+<td><a href="aurl/{{region}}">Click here</a></td>
 </tr>
 </tbody>
 </table>
