@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Embedable OAB Dev</title>
+    <link rel="icon" href="/playground/favicon.ico" type="image/x-icon" />
+  </head>
+
+ <body>
+
+<p><input type="text" id="date" placeholder="search by year (e.g 2015)" value="" onkeydown="myFunc()"></p>
+<table width=100%>
+<thead>
+<th><b>Institution/<br />Consortium</b></th>
+<th><b>Date</b></th>
+<th><b>Region</b></th>
+<th><b>Publisher(s)</b></th>
+<th><b>Strategic Considerations</b></th>
+<th><b>Outcome</b></th>
+<th><b>Estimated Annual Savings (USD)</b></th>
+</thead>
+<tbody sheetsu="https://sheetsu.com/apis/v1.0/18482d70bb03" sheetsu-limit="80" sheetsu-ignore-case="true">
+<tr>
+<td><a {{href}}>{{institution}}</a></td>
+<td>{{date}}</td>
+<td>{{region}}</td>
+<td>{{publisher}}</td>
+<td>{{considerations}}</td>
+<td>{{outcome}}</td>
+<td>{{savings}}</td>
+</tr>
+</tbody>
+</table>
+<p>Some institutions and consortia have canceled their Big Deals and subsequently come to new terms with the publisher on package subscriptions. If you have others to add to this list, please contact us using the buttons at the bottom of this page.</p>
+<table width=100%>
+<thead>
+<th><b>Institution/<br />Consortium</b></th>
+<th><b>Date</b></th>
+<th><b>Region</b></th>
+<th><b>Publisher(s)</b></th>
+<th><b>Strategic Considerations</b></th>
+<th><b>Outcome</b></th>
+<th><b>Estimated Annual Savings (USD)</b></th>
+</thead>
+<tbody sheetsu="https://sheetsu.com/apis/v1.0su/13fc816150b7/sheets/Rejoin" sheetsu-limit="80" sheetsu-ignore-case="true">
+<tr>
+<td><a {{href}}>{{institution}}</a></td>
+<td>{{date}}</td>
+<td>{{region}}</td>
+<td>{{publisher}}</td>
+<td>{{considerations}}</td>
+<td>{{outcome}}</td>
+<td>{{savings}}</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+<script src="//load.sheetsu.com"></script>
+   <script type="text/javascript">
+    var myFunc = debounce(function () {
+        dateValue = contryValue();
+        addSearchValue({ date: "*" + dateValue + "*" });
+        resetTableBody();
+        triggerNewSearch();
+
+    }, 400);
+
+
+    function contryValue() {
+        return document.getElementById("date").value;
+    }
+
+    function tableElement() {
+        return document.querySelector("tbody[sheetsu]");
+    }
+
+    function resetTableBody() {
+        document.querySelector("tbody[sheetsu]").innerHTML = tableRow();
+    }
+
+    function addSearchValue(searchValue) {
+        tableElement().setAttribute("sheetsu-search", JSON.stringify(searchValue));
+    }
+
+    function triggerNewSearch() {
+        var element = document.querySelector("tbody[sheetsu]");
+        (new ChangeGetElement(element)).call();
+    }
+
+    function tableRow() {
+        return '<td><a href="{{source}}">{{institution}}</a></td><td>{{date}}</td><td>{{region}}</td><td>{{publisher}}</td><td>{{considerations}}</td><td>{{outcome}}</td><td>{{savings}}</td>';
+    }
+
+    function debounce(func, wait, immediate) {
+        var timeout;
+        return function() {
+        var context = this, args = arguments;
+        var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+        };
+    };
+
+    </script>
+          
+          
+          
+  </body>
+
+  
+</html>
