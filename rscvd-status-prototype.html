@@ -10,7 +10,7 @@
 
  <body>
 
-<p><input type="text" id="date" placeholder="search by year (e.g 2015)" value="" onkeydown="myFunc()"></p>
+<p><input type="text" id="email" placeholder="youremail@ill.org" value="" onkeydown="myFunc()"></p>
 <table width=100%>
 <thead>
 <th><b>Date</b></th>
@@ -31,7 +31,7 @@
 <script src="//load.sheetsu.com"></script>
    <script type="text/javascript">
     var myFunc = debounce(function () {
-        dateValue = contryValue();
+        dateValue = emailValue();
         addSearchValue({ date: "*" + dateValue + "*" });
         resetTableBody();
         triggerNewSearch();
@@ -39,8 +39,8 @@
     }, 400);
 
 
-    function contryValue() {
-        return document.getElementById("date").value;
+    function emailValue() {
+        return document.getElementById("email").value;
     }
 
     function tableElement() {
@@ -61,7 +61,7 @@
     }
 
     function tableRow() {
-        return '<td><a href="{{source}}">{{institution}}</a></td><td>{{date}}</td><td>{{region}}</td><td>{{publisher}}</td><td>{{considerations}}</td><td>{{outcome}}</td><td>{{savings}}</td>';
+        return '<td>{{Timestamp}}</td><td>{{title}}</td><td>{{Supply Status}}</td><td><a href="https://aurl.org/{{Timestamp}}&{{title}}">Click here</a></td>';
     }
 
     function debounce(func, wait, immediate) {
