@@ -31,8 +31,8 @@
 <script src="//load.sheetsu.com"></script>
    <script type="text/javascript">
     var myFunc = debounce(function () {
-        dateValue = emailValue();
-        addSearchValue({ date: "*" + dateValue + "*" });
+        emailValue = emailValue();
+        addSearchValue({ email: "*" + emailValue + "*" });
         resetTableBody();
         triggerNewSearch();
 
