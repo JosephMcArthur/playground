@@ -17,7 +17,6 @@
    <!-- TODO: When building this for real expect to pass the search as a param -->
 <table width=100%>
 <thead>
-<th><b>Date</b></th>
 <th><b>Title</b></th>
 <th><b>Status</b></th>
 <th><b>Cancel</b></th>
@@ -65,7 +64,7 @@
     }
 
     function tableRow() {
-        return '<td>{{timestamp}}</td><td>{{title}}</td><td>{{status}}</td><td><a href="https://aurl.org/{{timestamp}}&{{title}}">Click here</a></td>';
+        return '<td>{{title}}</td><td>{{status}}</td><td><a href="https://aurl.org/{{timestamp}}&{{title}}">Click here</a></td>';
     }
 
     function debounce(func, wait, immediate) {
