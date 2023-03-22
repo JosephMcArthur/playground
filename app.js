@@ -19,7 +19,7 @@ search.addWidgets([
 search.addWidgets([
   instantsearch.widgets.searchBox({
     container: '#search-box',
-    placeholder: 'Search for organizations',
+    placeholder: 'Search for contacts',
   }),
 ])
 
@@ -28,7 +28,7 @@ search.addWidgets([
     container: '#hits',
     templates: {
       item: document.getElementById('hit-template').innerHTML,
-      empty: `Sorry, there is no report for <em>"{{query}}"</em> yet, get in touch if you'd like one`,
+      empty: `We didn't find any results for the search <em>"{{query}}"</em>`,
     },
   }),
 ])
