@@ -7,7 +7,6 @@
     integrity="sha256-p/rGN4RGy6EDumyxF9t7LKxWGg6/MZfGhJM/asKkqvA="
     crossorigin="anonymous"
   />
-  
 </head>
 <body>
   <header>
@@ -22,6 +21,7 @@
   <script type="text/html" id="hit-template">
     <div class="hit">
       <p class="hit-name">
+        {{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}
       </p>
     </div>
   </script>
