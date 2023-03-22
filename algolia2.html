@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/satellite-min.css"
+    integrity="sha256-p/rGN4RGy6EDumyxF9t7LKxWGg6/MZfGhJM/asKkqvA="
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <header>
+    <div id="search-box"></div>
+  </header>
+
+  <main>
+    <div id="hits"></div>
+    <div id="pagination"></div>
+  </main>
+
+  <script type="text/html" id="hit-template">
+    <div class="hit">
+      <p class="hit-name">
+        {{#helpers.highlight}}{ "attribute": "firstname" }{{/helpers.highlight}}
+        {{#helpers.highlight}}{ "attribute": "lastname" }{{/helpers.highlight}}
+      </p>
+    </div>
+  </script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/algoliasearch@4.15.0/dist/algoliasearch-lite.umd.js"
+    integrity="sha256-tJskEBAaO8rEBc+kjX8V7iTCp3nRzOGEsDKS6ckFGOY="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.53.0/dist/instantsearch.production.min.js"
+    integrity="sha256-JAFoxs9krkfi1sqvG1a7Rg2roZXsI+UnI3ElbjW762k="
+    crossorigin="anonymous"
+  ></script>
+  <script src="app2.js"></script>
+</body>
