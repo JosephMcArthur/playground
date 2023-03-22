@@ -28,7 +28,7 @@ search.addWidgets([
     container: '#hits',
     templates: {
       item: document.getElementById('hit-template').innerHTML,
-      empty: `We didn't find any results for the search <em>"{{query}}"</em>`,
+      empty: `Sorry, there is no report for <em>"{{query}}"</em> yet, get in touch if you'd like one`,
     },
   }),
 ])
