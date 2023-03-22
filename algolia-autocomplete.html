@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algolia Autocomplete Example</title>
+    <!-- Algolia and autocomplete.js libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/algoliasearch@4.11.0/dist/algoliasearch-lite.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.0/dist/autocomplete.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/autocomplete-theme-classic@0.38.0/build/theme.min.css">
+    <style>
+        .aa-input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <input id="search-input" class="aa-input" type="search" placeholder="Search for products...">
+
+    <!-- JavaScript code -->
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.11.0/dist/algoliasearch-lite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.0/dist/autocomplete.min.js"></script>
+    <script>
+        // Replace with your Algolia Application ID and Search API Key
+        const appId = 'J448NRRMMY';
+        const apiKey = 'd55ee251fd815bdda97dfb3732fbeff9';
+        const indexName = 'dev_oareport';
+
+        const client = algoliasearch(appId, apiKey);
+        const index = client.initIndex(indexName);
+
+        // Set up the autocomplete widget
+        autocomplete('#search-input', { hint: false }, [
+            {
+                source: autocomplete.sources.hits(index, { hitsPerPage: 5 }),
+                displayKey: 'name',
+                templates: {
+                    suggestion: function(suggestion) {
+                        return '<div>' + suggestion._highlightResult.name.value + '</div>';
+                    },
+                    empty: '<div>No results</div>'
+                }
+            }
+        ]).on('autocomplete:selected', function(event, suggestion, dataset) {
+            console.log(suggestion);
+        });
+    </script>
+</body>
+</html>
