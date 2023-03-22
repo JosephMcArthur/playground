@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Embedable OAB</title>
+  </head>
+
+
+ <body>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+  <script type="text/javascript">
+    algoliasearchNetlify({
+      appId: 'KV3QJPY2L8',
+      apiKey: '{{ env.ALGOLIA_SEARCH_KEY }}',
+      siteId: 'df11cc41-9d85-4801-95c0-63a9fd3342e3',
+      branch: 'dev',
+      selector: 'div#search',
+    });
+  </script>
+  </body>
+
+  
+</html>
