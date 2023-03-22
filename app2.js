@@ -5,7 +5,7 @@ const searchClient = algoliasearch(
 )
 
 const search = instantsearch({
-  indexName: 'contacts',
+  indexName: 'dev_oareport',
   searchClient,
   routing: true,
 })
