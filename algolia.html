@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
-
-  <head>
-    <meta charset="utf-8">
-    <title>Embedable OAB</title>
-  </head>
-
-
- <body>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
-  <script type="text/javascript">
-    algoliasearchNetlify({
-      appId: 'KV3QJPY2L8',
-      apiKey: '{{ env.ALGOLIA_SEARCH_KEY }}',
-      siteId: 'df11cc41-9d85-4801-95c0-63a9fd3342e3',
-      branch: 'dev',
-      selector: 'div#search',
-    });
-  </script>
-  </body>
-
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/satellite-min.css"
+    integrity="sha256-p/rGN4RGy6EDumyxF9t7LKxWGg6/MZfGhJM/asKkqvA="
+    crossorigin="anonymous"
+  />
   
-</html>
+</head>
+<body>
+  <header>
+    <div id="search-box"></div>
+  </header>
+
+  <main>
+    <div id="hits"></div>
+    <div id="pagination"></div>
+  </main>
+
+  <script type="text/html" id="hit-template">
+    <div class="hit">
+      <p class="hit-name">
+      </p>
+    </div>
+  </script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/algoliasearch@4.15.0/dist/algoliasearch-lite.umd.js"
+    integrity="sha256-tJskEBAaO8rEBc+kjX8V7iTCp3nRzOGEsDKS6ckFGOY="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.53.0/dist/instantsearch.production.min.js"
+    integrity="sha256-JAFoxs9krkfi1sqvG1a7Rg2roZXsI+UnI3ElbjW762k="
+    crossorigin="anonymous"
+  ></script>
+  <script src="app.js"></script>
+</body>
