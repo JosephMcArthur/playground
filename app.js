@@ -32,5 +32,3 @@ search.addWidgets([
     },
   }),
 ])
-
-search.start()
