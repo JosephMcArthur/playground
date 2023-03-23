@@ -32,3 +32,5 @@ search.addWidgets([
     },
   }),
 ])
+
+search.start()
