@@ -23,7 +23,7 @@ async function fetchSuggestions(searchTerm) {
     }
 
     try {
-        const url = `https://beta.oa.works/report/orgs/suggest/search/${searchTerm}?include=private`;
+        const url = `https://beta.oa.works/report/orgs/suggest/search/${searchTerm}`;
         const response = await fetch(url);
         const data = await response.json();
 
