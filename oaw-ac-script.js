@@ -15,7 +15,7 @@ searchBox.addEventListener('input', async (event) => {
         const response = await fetch(url);
         const data = await response.json();
 
-        if (Array.isArray(data) && data.length > 0) {
+        if (Array.isArray(data) && data.some(item => item.hasOwnProperty('name'))) {
             suggestionsList.innerHTML = data.results.map(result => `<li>${result.name}</li>`).join('');
             suggestionsList.style.display = 'block';
         } else {
