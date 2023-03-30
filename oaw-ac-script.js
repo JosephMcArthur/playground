@@ -16,7 +16,7 @@ searchBox.addEventListener('input', async (event) => {
         const data = await response.json();
 
         if (Array.isArray(data) && data.some(item => item.hasOwnProperty('name'))) {
-            suggestionsList.innerHTML = data.map(result => `<li>${result.name}</li>`).join('');
+            suggestionsList.innerHTML = data.map(result => `<li><a href="https://oa.report/${result.objectID}">${result.name}</a></li>`).join('');
             suggestionsList.style.display = 'block';
         } else {
             suggestionsList.innerHTML = '';
@@ -28,7 +28,7 @@ searchBox.addEventListener('input', async (event) => {
 });
 
 suggestionsList.addEventListener('click', (event) => {
-    if (event.target.tagName.toLowerCase() === 'li') {
+    if (event.target.tagName.toLowerCase() === 'a') {
         searchBox.value = event.target.innerText;
         suggestionsList.innerHTML = '';
         suggestionsList.style.display = 'none';
