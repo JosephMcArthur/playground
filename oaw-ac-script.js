@@ -20,7 +20,7 @@ searchBox.addEventListener('input', async (event) => {
         const filteredData = data.filter(item => !item.private);
 
         if (Array.isArray(filteredData) && filteredData.some(item => item.hasOwnProperty('name'))) {
-            suggestionsList.innerHTML = filteredData.map(result => `<li>${result.name}</li>`).join('');
+            suggestionsList.innerHTML = filteredData.map(result => `<li><a href="https://oa.report/${result.objectID}">${result.name}</a></li>`).join('');
             suggestionsList.style.display = 'block';
             selectedIndex = -1;
         } else {
