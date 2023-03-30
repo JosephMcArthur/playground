@@ -11,7 +11,7 @@ searchBox.addEventListener('input', async (event) => {
     }
 
     try {
-        const url = `https://bg.beta.oa.works/report/orgs/suggest/name/${searchTerm}`;
+        const url = `https://bg.beta.oa.works/report/orgs/suggest/name/${searchTerm}?include=objectID`;
         const response = await fetch(url);
         const data = await response.json();
 
