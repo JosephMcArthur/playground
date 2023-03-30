@@ -13,12 +13,14 @@ searchBox.addEventListener('input', async (event) => {
     }
 
     try {
-        const url = `https://bg.beta.oa.works/report/orgs/suggest/name/${searchTerm}?include=objectID`;
+        const url = `https://bg.beta.oa.works/report/orgs/suggest/name/${searchTerm}?include=objectID,private`;
         const response = await fetch(url);
         const data = await response.json();
 
-        if (Array.isArray(data) && data.some(item => item.hasOwnProperty('name'))) {
-            suggestionsList.innerHTML = data.map(result => `<li><a href="https://oa.report/${result.objectID}">${result.name}</a></li>`).join('');
+        const filteredData = data.filter(item => !item.private);
+
+        if (Array.isArray(filteredData) && filteredData.some(item => item.hasOwnProperty('name'))) {
+            suggestionsList.innerHTML = filteredData.map(result => `<li>${result.name}</li>`).join('');
             suggestionsList.style.display = 'block';
             selectedIndex = -1;
         } else {
