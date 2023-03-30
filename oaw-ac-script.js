@@ -1,9 +1,8 @@
 const searchBox = document.getElementById('searchBox');
 const suggestionsList = document.getElementById('suggestionsList');
+let debounceTimeout;
 
-searchBox.addEventListener('input', async (event) => {
-    const searchTerm = event.target.value;
-
+async function fetchSuggestions(searchTerm) {
     if (!searchTerm.trim()) {
         suggestionsList.innerHTML = '';
         suggestionsList.style.display = 'none';
@@ -27,6 +26,15 @@ searchBox.addEventListener('input', async (event) => {
     } catch (error) {
         console.error('Error fetching suggestions:', error);
     }
+}
+
+searchBox.addEventListener('input', (event) => {
+    const searchTerm = event.target.value;
+
+    clearTimeout(debounceTimeout);
+    debounceTimeout = setTimeout(() => {
+        fetchSuggestions(searchTerm);
+    }, 300);
 });
 
 suggestionsList.addEventListener('click', (event) => {
@@ -34,7 +42,6 @@ suggestionsList.addEventListener('click', (event) => {
         searchBox.value = event.target.innerText;
         suggestionsList.innerHTML = '';
         suggestionsList.style.display = 'none';
-        selectedIndex = -1;
     }
 });
 
@@ -42,6 +49,5 @@ document.addEventListener('click', (event) => {
     if (event.target !== searchBox) {
         suggestionsList.innerHTML = '';
         suggestionsList.style.display = 'none';
-        selectedIndex = -1;
     }
 });
