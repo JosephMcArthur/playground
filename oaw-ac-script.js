@@ -2,6 +2,19 @@ const searchBox = document.getElementById('searchBox');
 const suggestionsList = document.getElementById('suggestionsList');
 let debounceTimeout;
 
+function parseResult(result) {
+    const objectIDRegex = /objectID:"(.*?)"/;
+    const nameRegex = /name:"(.*?)"/;
+    
+    const objectIDMatch = result.match(objectIDRegex);
+    const nameMatch = result.match(nameRegex);
+    
+    return {
+        objectID: objectIDMatch ? objectIDMatch[1] : '',
+        name: nameMatch ? nameMatch[1] : ''
+    };
+}
+
 async function fetchSuggestions(searchTerm) {
     if (!searchTerm.trim()) {
         suggestionsList.innerHTML = '';
@@ -10,13 +23,14 @@ async function fetchSuggestions(searchTerm) {
     }
 
     try {
-        const url = `https://beta.oa.works/report/orgs/suggest/search/${searchTerm}?include=name,objectID,private`;
+        const url = `https://beta.oa.works/report/orgs/suggest/search/${searchTerm}?include=private`;
         const response = await fetch(url);
         const data = await response.json();
 
-        const filteredData = data.filter(item => !item.private);
+        const parsedData = data.map(parseResult);
+        const filteredData = parsedData.filter(item => item.name && item.objectID);
 
-        if (Array.isArray(filteredData) && filteredData.some(item => item.hasOwnProperty('name'))) {
+        if (Array.isArray(filteredData) && filteredData.length > 0) {
             suggestionsList.innerHTML = filteredData.map(result => `<li><a href="https://oa.report/${result.objectID}">${result.name}</a></li>`).join('');
             suggestionsList.style.display = 'block';
         } else {
