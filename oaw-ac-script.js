@@ -24,8 +24,8 @@ searchBox.addEventListener('input', async (event) => {
             suggestionsList.style.display = 'block';
             selectedIndex = -1;
         } else {
-            suggestionsList.innerHTML = '';
-            suggestionsList.style.display = 'none';
+            suggestionsList.innerHTML = '<li>No results! If you think there should be, <a href="mailto:contact@yourdomain.com">get in touch</a>.</li>';
+            suggestionsList.style.display = 'block';
             selectedIndex = -1;
         }
     } catch (error) {
