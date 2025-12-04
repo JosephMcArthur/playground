@@ -1,0 +1,579 @@
+
+
+
+  
+
+			<!DOCTYPE html>
+<html lang="en-US" class="no-js"> 
+<head>
+	<meta charset="UTF-8" />
+	<link href="https://openaccess.gatesfoundation.org/wp-content/themes/gesso/images/favicon.ico" rel="shortcut icon">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="cleartype" content="on">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=i.length;r<a;r++)ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"))}for(var n=document.querySelectorAll("video"),r=0,a=n.length;r<a;r++)ewwwAttr(n[r],"poster",e?n[r].getAttribute("data-poster-webp"):n[r].getAttribute("data-poster-image"));for(var o,l=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=l.length;r<a;r++)e&&(ewwwAttr(l[r],"data-lazy-srcset",l[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(l[r],"data-srcset",l[r].getAttribute("data-srcset-webp")),ewwwAttr(l[r],"data-lazy-src",l[r].getAttribute("data-lazy-src-webp")),ewwwAttr(l[r],"data-src",l[r].getAttribute("data-src-webp")),ewwwAttr(l[r],"data-orig-file",l[r].getAttribute("data-webp-orig-file")),ewwwAttr(l[r],"data-medium-file",l[r].getAttribute("data-webp-medium-file")),ewwwAttr(l[r],"data-large-file",l[r].getAttribute("data-webp-large-file")),null!=(o=l[r].getAttribute("srcset"))&&!1!==o&&o.includes("R0lGOD")&&ewwwAttr(l[r],"src",l[r].getAttribute("data-lazy-src-webp"))),l[r].className=l[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var s=document.querySelectorAll(".ewww_webp"),r=0,a=s.length;r<a;r++)e?(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-webp")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-webp")),ewwwAttr(s[r],"data-orig-file",s[r].getAttribute("data-webp-orig-file")),ewwwAttr(s[r],"data-medium-file",s[r].getAttribute("data-webp-medium-file")),ewwwAttr(s[r],"data-large-file",s[r].getAttribute("data-webp-large-file")),ewwwAttr(s[r],"data-large_image",s[r].getAttribute("data-webp-large_image")),ewwwAttr(s[r],"data-src",s[r].getAttribute("data-webp-src"))):(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-img")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-img"))),s[r].className=s[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v26.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>2025 Open Access Policy - Gates Open Access Policy</title>
+	<link rel="canonical" href="https://openaccess.gatesfoundation.org/open-access-policy/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="2025 Open Access Policy - Gates Open Access Policy" />
+	<meta property="og:description" content="Purpose In January 2015, we introduced our Open Access policy to enable unrestricted access and reuse of all peer-reviewed published research funded, in whole or in part, by the foundation. In January 2021, this policy was updated to be consistent with the key principles of Plan S. As a member of cOAlition S, the foundation &hellip;" />
+	<meta property="og:url" content="https://openaccess.gatesfoundation.org/open-access-policy/" />
+	<meta property="og:site_name" content="Gates Open Access Policy" />
+	<meta property="article:modified_time" content="2025-02-24T06:52:24+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="4 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://openaccess.gatesfoundation.org/open-access-policy/","url":"https://openaccess.gatesfoundation.org/open-access-policy/","name":"2025 Open Access Policy - Gates Open Access Policy","isPartOf":{"@id":"https://openaccess.gatesfoundation.org/#website"},"datePublished":"2021-11-24T20:57:02+00:00","dateModified":"2025-02-24T06:52:24+00:00","breadcrumb":{"@id":"https://openaccess.gatesfoundation.org/open-access-policy/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://openaccess.gatesfoundation.org/open-access-policy/"]}]},{"@type":"BreadcrumbList","@id":"https://openaccess.gatesfoundation.org/open-access-policy/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://openaccess.gatesfoundation.org/"},{"@type":"ListItem","position":2,"name":"2025 Open Access Policy"}]},{"@type":"WebSite","@id":"https://openaccess.gatesfoundation.org/#website","url":"https://openaccess.gatesfoundation.org/","name":"Gates Open Access Policy","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://openaccess.gatesfoundation.org/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//openaccess.gatesfoundation.org' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.gstatic.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" type="application/rss+xml" title="Gates Open Access Policy &raquo; Feed" href="https://openaccess.gatesfoundation.org/feed/" />
+<link rel='stylesheet' id='wp-block-library-css' href='https://openaccess.gatesfoundation.org/wp/wp-includes/css/dist/block-library/style.min.css?ver=2ed0da2c1f9043c2a2feb678a7dd44cd' type='text/css' media='all' />
+<style id='safe-svg-svg-icon-style-inline-css' type='text/css'>
+.safe-svg-cover{text-align:center}.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{fill:currentColor;height:100%;max-height:100%;max-width:100%;width:100%}
+
+</style>
+<link rel='stylesheet' id='gesso-editor-styles-css' href='https://openaccess.gatesfoundation.org/wp-content/themes/gesso/css/custom-editor-styles.css?ver=1762440812' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--cream: #F5F3ED;--wp--preset--color--purple: #87235E;--wp--preset--color--light-grey: #F6F6F6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 840px;--wp--style--global--wide-size: 1130px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-cream-color{color: var(--wp--preset--color--cream) !important;}.has-purple-color{color: var(--wp--preset--color--purple) !important;}.has-light-grey-color{color: var(--wp--preset--color--light-grey) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-cream-background-color{background-color: var(--wp--preset--color--cream) !important;}.has-purple-background-color{background-color: var(--wp--preset--color--purple) !important;}.has-light-grey-background-color{background-color: var(--wp--preset--color--light-grey) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-cream-border-color{border-color: var(--wp--preset--color--cream) !important;}.has-purple-border-color{border-color: var(--wp--preset--color--purple) !important;}.has-light-grey-border-color{border-color: var(--wp--preset--color--light-grey) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='dashicons-css' href='https://openaccess.gatesfoundation.org/wp/wp-includes/css/dashicons.min.css?ver=2ed0da2c1f9043c2a2feb678a7dd44cd' type='text/css' media='all' />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" /><link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i&#038;display=swap" as="fetch" crossorigin="anonymous" /><link rel='stylesheet' id='style-css' href='https://openaccess.gatesfoundation.org/wp-content/themes/gesso/css/styles.css?ver=1762440818' type='text/css' media='all' />
+<link rel='stylesheet' id='searchwp-forms-css' href='https://openaccess.gatesfoundation.org/wp-content/plugins/searchwp/assets/css/frontend/search-forms.min.css?ver=4.5.1' type='text/css' media='all' />
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/vendor/react.min.js?ver=18.3.1.1" id="react-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/vendor/react-jsx-runtime.min.js?ver=18.3.1" id="react-jsx-runtime-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/autop.min.js?ver=9fb50649848277dd318d" id="wp-autop-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/blob.min.js?ver=9113eed771d446f4a556" id="wp-blob-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/block-serialization-default-parser.min.js?ver=14d44daebf663d05d330" id="wp-block-serialization-default-parser-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/deprecated.min.js?ver=e1f84915c5e8ae38964c" id="wp-deprecated-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/dom.min.js?ver=93117dfee2692b04b770" id="wp-dom-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.3.1.1" id="react-dom-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/escape-html.min.js?ver=6561a406d2d232a6fbd2" id="wp-escape-html-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/element.min.js?ver=cb762d190aebbec25b27" id="wp-element-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/is-shallow-equal.min.js?ver=e0f9f1d78d83f5196979" id="wp-is-shallow-equal-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/keycodes.min.js?ver=034ff647a54b018581d3" id="wp-keycodes-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/priority-queue.min.js?ver=9c21c957c7e50ffdbf48" id="wp-priority-queue-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/compose.min.js?ver=d52df0f868e03c1bd905" id="wp-compose-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/private-apis.min.js?ver=4b858962c15c2c7a135f" id="wp-private-apis-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/redux-routine.min.js?ver=a0a172871afaeb261566" id="wp-redux-routine-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/data.min.js?ver=7c62e39de0308c73d50c" id="wp-data-js"></script>
+<script type="text/javascript" id="wp-data-js-after">
+/* <![CDATA[ */
+( function() {
+	var userId = 0;
+	var storageKey = "WP_DATA_USER_" + userId;
+	wp.data
+		.use( wp.data.plugins.persistence, { storageKey: storageKey } );
+} )();
+/* ]]> */
+</script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/html-entities.min.js?ver=2cd3358363e0675638fb" id="wp-html-entities-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/a11y.min.js?ver=3156534cc54473497e14" id="wp-a11y-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/rich-text.min.js?ver=4021b9e4e9ef4d3cd868" id="wp-rich-text-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/shortcode.min.js?ver=b7747eee0efafd2f0c3b" id="wp-shortcode-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/warning.min.js?ver=ed7c8b0940914f4fe44b" id="wp-warning-js"></script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/dist/blocks.min.js?ver=8474af4b6260126fa879" id="wp-blocks-js"></script>
+<script type="text/javascript" src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://openaccess.gatesfoundation.org/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://openaccess.gatesfoundation.org/wp-content/themes/gesso/js/libraries/modernizr.min.js?ver=1762440726" id="gessomodernizr-js"></script>
+<script type="text/javascript" src="https://openaccess.gatesfoundation.org/wp-content/themes/gesso/js/libraries/details-element-polyfill.js?ver=1762440726" id="gessodetailspolyfill-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://openaccess.gatesfoundation.org/wp-content/themes/gesso/js/dist/mobile-menu.min.js?ver=1762440808" id="gessomobilemenu-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://openaccess.gatesfoundation.org/wp-content/themes/gesso/js/dist/primary-menu.min.js?ver=1762440808" id="gessoprimarymenu-js" defer="defer" data-wp-strategy="defer"></script>
+<link rel="https://api.w.org/" href="https://openaccess.gatesfoundation.org/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://openaccess.gatesfoundation.org/wp-json/wp/v2/pages/51" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://openaccess.gatesfoundation.org/wp/xmlrpc.php?rsd" />
+
+<link rel='shortlink' href='https://openaccess.gatesfoundation.org/?p=51' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://openaccess.gatesfoundation.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fopenaccess.gatesfoundation.org%2Fopen-access-policy%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://openaccess.gatesfoundation.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fopenaccess.gatesfoundation.org%2Fopen-access-policy%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.165.0" /><meta name="google-site-verification" content="Q2gO_i1cvHxT6I_7sIBRz3h_GusHbv7PnPzfBSr73VI"><noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style>
+<!-- Google Tag Manager snippet added by Site Kit -->
+<script type="text/javascript">
+/* <![CDATA[ */
+
+			( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-WGHQLPK' );
+			
+/* ]]> */
+</script>
+
+<!-- End Google Tag Manager snippet added by Site Kit -->
+<style id="kirki-inline-styles"></style>
+</head>
+	
+	
+	<!-- Provided by templates/base.twig -->
+	<body class="page-template-default page page-id-51 page-parent open-access-policy" id="body_top">
+<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+
+			
+<div class="skiplinks">
+  <a href="#main" class="skiplinks__link visually-hidden focusable">Skip to main content</a>
+</div>
+	
+		
+	
+
+<div class="l-site-container">
+  		
+		
+
+
+
+
+<header class="l-header" role="banner">
+			<div class="l-constrain l-constrain--medium">
+				<div class="l-header__content">
+			<div class="l-header__first">
+								
+<div class="site-logo">
+	<a href="/" title="Home" rel="home">
+		<img class="site-logo__image" width="172" height="58" src="/wp-content/themes/gesso/images/logo.svg" alt="Open Access Policy" />
+	</a>
+</div>
+						</div>
+			<div class="l-header__second">
+								
+
+<ul class="menu menu--utility">
+		<li class="menu__item">
+		<a class="no-underline menu__link menu-item menu-item-type-custom menu-item-object-custom menu-item-571" target="_blank" href="https://gatesfoundationoa.zendesk.com/hc/en-us"><span>Support</span></a>
+			</li>
+		<li class="menu__item">
+		<a class="no-underline menu__link menu__link--search menu-item menu-item-type-custom menu-item-object-custom menu-item-570" target="_self" href="/?s="><span>Search</span></a>
+			</li>
+	</ul>
+								
+
+<ul class="menu menu--main">
+		<li class="menu__item has-subnav">
+		<a class="no-underline menu__link has-subnav is-active menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-has-children menu-item-551" target="_self" href="https://openaccess.gatesfoundation.org/open-access-policy/"><span>About OAP</span></a>
+				<div class="menu menu__subnav">
+						<div class="menu__subnav-children">
+											<div class="menu__item menu__item--summary">
+					<div class="menu__summary">
+													<div class="menu__summary-title">
+								About OAP
+							</div>
+							<p class="menu__summary-description">The Open Access policy enables the unrestricted access and reuse of all research funded, in whole or in part, by the foundation, including any underlying data sets.</p>
+							<div>
+								<a class="menu__summary-link" href="https://openaccess.gatesfoundation.org/open-access-policy/"><span>Read Our Current Policy</span></a>
+							</div>
+											</div>
+				</div>
+								<ul>
+																	<li class="menu__item menu__item-card">
+															<div class="menu__card">
+									<div class="menu__card-title">
+										2025 Open Access Policy
+									</div>
+									<p class="menu__card-content">
+										Effective January 1, 2025, OAP has been expanded to apply to all published research funded, in whole or in part, by the foundation.
+									</p>
+									<a class="menu__link menu__card-link  menu-item menu-item-type-post_type menu-item-object-page menu-item-513" target="_self" href="https://openaccess.gatesfoundation.org/open-access-policy/2025-open-access-policy/">
+										<span class="menu__card-desktop-link">Learn more</span>
+										<span class="menu__card-mobile-link">2025 Open Access Policy</span>
+									</a>
+								</div>
+																				</li>
+																	<li class="menu__item menu__item-card">
+															<div class="menu__card">
+									<div class="menu__card-title">
+										Frequently Asked Questions
+									</div>
+									<p class="menu__card-content">
+										Check out common questions we have received about the current and new open access policy on our Zendesk Support site.
+									</p>
+									<a class="menu__link menu__card-link  menu-item menu-item-type-custom menu-item-object-custom menu-item-552" target="_blank" href="https://gatesfoundationoa.zendesk.com/hc/en-us">
+										<span class="menu__card-desktop-link">Learn more</span>
+										<span class="menu__card-mobile-link">Frequently Asked Questions</span>
+									</a>
+								</div>
+																				</li>
+									</ul>
+						</div>
+					</div>
+			</li>
+		<li class="menu__item has-subnav">
+		<a class="no-underline menu__link has-subnav menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-555" target="_self" href="https://openaccess.gatesfoundation.org/how-to-comply/"><span>How to Comply</span></a>
+				<div class="menu menu__subnav">
+						<div class="menu__subnav-children">
+											<div class="menu__item menu__item--summary">
+					<div class="menu__summary">
+													<div class="menu__summary-title">
+								How to Comply
+							</div>
+							<p class="menu__summary-description">Here's how to ensure your work complies with our policy and tips on navigating the process</p>
+							<div>
+								<a class="menu__summary-link" href="https://openaccess.gatesfoundation.org/how-to-comply/"><span>Step by Step Guide</span></a>
+							</div>
+											</div>
+				</div>
+								<ul>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-post_type menu-item-object-page menu-item-556" target="_self" href="https://openaccess.gatesfoundation.org/how-to-comply/data-sharing-requirements/"><span>Data Sharing Requirements</span></a>
+																				</li>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-post_type menu-item-object-page menu-item-557" target="_self" href="https://openaccess.gatesfoundation.org/how-to-comply/share-your-paper-via-oa-works/"><span>Share Your Paper via OA.Works</span></a>
+																				</li>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-post_type menu-item-object-page menu-item-559" target="_self" href="https://openaccess.gatesfoundation.org/gates-open-research/"><span>Publish with Gates Open Research</span></a>
+																				</li>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-post_type menu-item-object-page menu-item-558" target="_self" href="https://openaccess.gatesfoundation.org/how-to-comply/pubmed-central-deposits/"><span>Share via PubMed Central Deposits</span></a>
+																				</li>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-custom menu-item-object-custom menu-item-575" target="_self" href="https://gatesfoundationoa.zendesk.com/hc/en-us"><span>Frequently Asked Questions</span></a>
+																				</li>
+									</ul>
+						</div>
+					</div>
+			</li>
+		<li class="menu__item has-subnav">
+		<a class="no-underline menu__link has-subnav menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-553" target="_self" href="#"><span>Resources</span></a>
+				<div class="menu menu__subnav">
+						<div class="menu__subnav-children">
+											<div class="menu__item menu__item--summary">
+					<div class="menu__summary">
+													<div class="menu__summary-title">
+								Resources
+							</div>
+							<p class="menu__summary-description">A set of tools and guidance for how to comply with the policy. If you or your team create additional resources, please share!</p>
+							<div>
+								<a class="menu__summary-link" href="#"><span></span></a>
+							</div>
+											</div>
+				</div>
+								<ul>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-custom menu-item-object-custom menu-item-560" target="_self" href="https://gatesfoundationoa.zendesk.com/hc/en-us/articles/33230053228948-2025-Grantee-Guide"><span>Grantee Publishing Guide</span></a>
+																				</li>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-custom menu-item-object-custom menu-item-561" target="_self" href="https://gatesfoundationoa.zendesk.com/hc/en-us/articles/24810253708820-Grantee-Repository-Guide"><span>Repository Guide</span></a>
+																				</li>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-custom menu-item-object-custom menu-item-632" target="_self" href="https://gatesfoundationoa.zendesk.com/hc/en-us/articles/34622572054420-Grantee-Preprint-Guide"><span>Grantee Preprint Guide</span></a>
+																				</li>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-custom menu-item-object-custom menu-item-656" target="_self" href="https://gatesfoundationoa.zendesk.com/hc/en-us/articles/35567472986132-Grantee-Data-Availability-Guide"><span>Grantee Data Availability Guide</span></a>
+																				</li>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-post_type menu-item-object-page menu-item-562" target="_self" href="https://openaccess.gatesfoundation.org/payment-of-publishing-fees/"><span>Payment of Publishing Fees</span></a>
+																				</li>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-post_type menu-item-object-page menu-item-565" target="_self" href="https://openaccess.gatesfoundation.org/how-to-comply/data-sharing-requirements/"><span>Data Sharing Requirements</span></a>
+																				</li>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-custom menu-item-object-custom menu-item-563" target="_self" href="https://doaj.org/"><span>Directory of Open Access Journals</span></a>
+																				</li>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-custom menu-item-object-custom menu-item-576" target="_self" href="https://go.communications.gatesfoundation.org/l/701613/2024-01-08/xlhjz"><span>Newsletter - sign up</span></a>
+																				</li>
+																	<li class="menu__item">
+															<a class="no-underline menu__link menu-item menu-item-type-custom menu-item-object-custom menu-item-566" target="_self" href="https://gatesfoundationoa.zendesk.com/hc/en-us"><span>Frequently Asked Questions</span></a>
+																				</li>
+									</ul>
+						</div>
+					</div>
+			</li>
+		<li class="menu__item has-subnav">
+		<a class="no-underline menu__link has-subnav menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-554" target="_self" href="https://go.communications.gatesfoundation.org/l/701613/2024-01-08/xlhjz"><span>Initiatives</span></a>
+				<div class="menu menu__subnav">
+						<div class="menu__subnav-children">
+											<div class="menu__item menu__item--summary">
+					<div class="menu__summary">
+													<div class="menu__summary-title">
+								Initiatives
+							</div>
+							<p class="menu__summary-description">Explore the fun and exciting parts of Open Access Policy.</p>
+							<div>
+								<a class="menu__summary-link" href="https://go.communications.gatesfoundation.org/l/701613/2024-01-08/xlhjz"><span>Subscribe to Newsletter</span></a>
+							</div>
+											</div>
+				</div>
+								<ul>
+																	<li class="menu__item menu__item-card">
+															<div class="menu__card">
+									<div class="menu__card-title">
+										Unlocked
+									</div>
+									<p class="menu__card-content">
+										Check out news and updates from Open Access Policy. Hear what has been said in the press!
+									</p>
+									<a class="menu__link menu__card-link  menu-item menu-item-type-post_type menu-item-object-page menu-item-567" target="_self" href="https://openaccess.gatesfoundation.org/unlocked/">
+										<span class="menu__card-desktop-link">Learn more</span>
+										<span class="menu__card-mobile-link">Unlocked</span>
+									</a>
+								</div>
+																				</li>
+																	<li class="menu__item menu__item-card">
+															<div class="menu__card">
+									<div class="menu__card-title">
+										Open Access Initiatives
+									</div>
+									<p class="menu__card-content">
+										Explore the ongoing partnerships we have to improve open access.
+									</p>
+									<a class="menu__link menu__card-link  menu-item menu-item-type-post_type menu-item-object-page menu-item-736" target="_self" href="https://openaccess.gatesfoundation.org/open-access-initiatives/">
+										<span class="menu__card-desktop-link">Learn More</span>
+										<span class="menu__card-mobile-link">Open Access Initiatives</span>
+									</a>
+								</div>
+																				</li>
+									</ul>
+						</div>
+					</div>
+			</li>
+	</ul>
+						</div>
+		</div>
+
+		<div class="l-header__search" aria-expanded="false">
+							
+<form class="searchform" method="get" action="/" role="search">
+	<div>
+		<label for="s" class="searchform__label hidden">Search</label>
+		<input class="searchform__input" type="search" name="s" placeholder="Search" value="" aria-label="Search">
+		<button class="searchform__button button" type="submit" role="button">Search</button>
+	</div>
+</form>
+					</div>
+			</div>
+	</header>
+
+		<main id="main" class="main" role="main" tabindex="-1">
+			
+
+
+<div class="l-preface">
+      <div class="l-constrain">
+    				      </div>
+  </div>
+
+													<nav class="breadcrumb breadcrumb-desktop l-constrain l-constrain--large" role="navigation"><div class="breadcrumb__wrap"><div class="l-constrain l-constrain--medium"><span><span><a href="https://openaccess.gatesfoundation.org/">Home</a></span> / <span class="breadcrumb_last" aria-current="page">2025 Open Access Policy</span></span></div></div></nav>
+								<nav class="breadcrumb breadcrumb-mobile" role="navigation"><div class="breadcrumb__wrap"><div class="l-constrain">< <a href="https://openaccess.gatesfoundation.org">Home</a></div></div></nav>
+			
+			  <!-- Provided by templates/page.twig -->
+  
+
+
+<div class="l-sidebar  l-constrain l-constrain--medium">
+
+<aside class="l-sidebar__sidebar">
+		  
+	<div class="in-page-nav">
+		<h3 class="in-page-nav__heading">On this page:</h3>
+		<ul class="in-page-nav__list">
+		</ul>
+	</div>
+    
+</aside>
+
+<div class="l-sidebar__main">
+	      
+<h1 class="page-title">2025 Open Access Policy</h1>
+      
+<h2 class="wp-block-heading">Purpose</h2>
+
+
+
+<p>In January 2015, we introduced our Open Access policy to enable unrestricted access and reuse of all peer-reviewed published research funded, in whole or in part, by the foundation.</p>
+
+
+
+<p>In January 2021, this policy was updated to be consistent with the key principles of Plan S. As a member of cOAlition S, the foundation is committed to working in partnership with other funders to make all research articles open by default.</p>
+
+
+
+<p><strong>Effective January 1, 2025,</strong>&nbsp;this policy has been expanded to apply to all published research funded, in whole or in part, by the foundation (“Funded Manuscripts”). The Open Access policy also applies to any data underlying the Funded Manuscripts.</p>
+
+
+
+<p>These updates maintain the original intent of the Open Access policy and will broaden the reach and impact of the vital research we fund to continue our mission to improve the lives of the world’s most vulnerable populations.</p>
+
+
+
+<h2 class="wp-block-heading">Scope</h2>
+
+
+
+<p>The policy is effective for all grants awarded from January 1, 2015 and will apply to all Funded Manuscripts starting January 1, 2025.</p>
+
+
+
+<p>It is the foundation’s expectation that Funded Manuscripts shall be shared promptly in the form of a preprint, which is a version of a manuscript hosted on a public server prior to formal peer review, except where the grantee determines that a preprint is not appropriate due to ethical, safety or other legitimate concerns.</p>
+
+
+
+<p>This policy also applies to the dissemination of Funded Manuscripts generated by foundation employees.</p>
+
+
+
+<p>This policy does not apply to works of opinion, such as ‘white papers’, key learnings reports, policy positions, etc. Such works shall be disseminated in accordance with the terms of the applicable funding agreement with the foundation, but are still encouraged to be as accessible and open as possible.</p>
+
+
+
+<h2 class="wp-block-heading">Policy</h2>
+
+
+
+<p>Funded Manuscripts subject to the Open Access Policy should contain the following elements:</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Funded Manuscripts Will Be Available.&nbsp;</strong>As soon as possible and to the extent feasible, Funded Manuscripts shall be published as a preprint in a preprint server recognized by the foundation or preapproved preprint server which applies a sufficient level of scrutiny to submissions. Accepted articles shall be deposited immediately upon publication in PubMed Central (PMC), or in another openly accessible repository, with proper metadata tagging identifying Gates funding. In addition, grantees shall disseminate Funded Manuscripts as described in their funding agreements with the foundation, including as described in any proposal or Global Access commitments.</li>
+
+
+
+<li><strong>Dissemination of Funded Manuscripts Will Be On “Open Access” Terms.</strong>&nbsp;All Funded Manuscripts, including any subsequent updates to key conclusions, shall be available immediately, without any embargo, under the&nbsp;<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>&nbsp;or an equivalent license. This will permit all users to copy, redistribute, transform, and build on the material in any medium or format for any purpose (including commercial) without further permission or fees being required.</li>
+
+
+
+<li><strong>Gates Grantees Will Retain Copyright.</strong>&nbsp;Grantees shall retain sufficient copyright in Funded Manuscripts to ensure such Funded Manuscripts are deposited into an open-access repository and published under the CC-BY 4.0 or equivalent license.</li>
+
+
+
+<li><strong>Underlying Data Will Be Accessible Immediately</strong>. The Foundation requires that underlying data supporting the Funded Manuscripts shall be made accessible immediately and as open as possible upon availability of the Funded Manuscripts, subject to any applicable ethical, legal, or regulatory requirements or restrictions. All Funded Manuscripts must be accompanied by an Underlying Data Availability Statement that describes where any primary data, associated metadata, original software, and any additional relevant materials or information necessary to understand, assess, and replicate the Funded Manuscripts findings in totality can be found. Grantees are encouraged to adhere to the&nbsp;<a href="https://www.go-fair.org/fair-principles/" target="_blank" rel="noreferrer noopener">FAIR principles</a>&nbsp;to improve the findability, accessibility, interoperability, and reuse of digital assets.</li>
+
+
+
+<li><strong>The Foundation Will Not Pay Article Processing Charges (APC).</strong>&nbsp;Any publication fees are the responsibility of the grantees and their co-authors.</li>
+
+
+
+<li><strong>Compliance Is A Requirement of Funding</strong>. This Open Access policy applies to all Funded Manuscripts, whether the funding is in whole or in part. Compliance will be continuously reviewed, and grantees and authors will be contacted when they are non-compliant.
+<ul class="wp-block-list">
+<li>As appropriate, Grantees should include the following acknowledgment and notice in Funded Manuscripts:</li>
+
+
+
+<li>“This work was supported, in whole or in part, by the Gates Foundation [Grant number]. The conclusions and opinions expressed in this work are those of the author(s) alone and shall not be attributed to the Foundation. Under the grant conditions of the Foundation, a Creative Commons Attribution 4.0 License has already been assigned to the Author Accepted Manuscript version that might arise from this submission. Please note works submitted as a preprint have not undergone a peer review process.”</li>
+</ul>
+</li>
+</ol>
+
+
+
+<p><strong>Email questions to&nbsp;<a href="/cdn-cgi/l/email-protection#97f8e7f2f9f6f4f4f2e4e4d7f0f6e3f2e4f1f8e2f9f3f6e3fef8f9b9f8e5f0"><span class="__cf_email__" data-cfemail="3758475259565454524444775056435244515842595356435e585919584550">[email&#160;protected]</span></a></strong></p>
+
+
+
+<p></p>
+
+    
+</div>
+
+</div>
+
+			
+
+
+<div class="l-postscript">
+      <div class="l-constrain">
+    				      </div>
+  </div>
+		</main>
+
+					<!-- Provided by templates/footer.twig -->
+
+
+
+<footer id="footer" class="l-footer" role="contentinfo">
+      <div class="l-constrain">
+        <div class="footer-top">
+      <a class="footer--logo-link" href="https://www.gatesfoundation.org" aria-label="Gates Foundation">
+        <img class="footer--logo" src="/wp-content/themes/gesso/images/logo-footer.svg" alt="" />
+      </a>
+      <div class="footer--divider "></div>
+      <p>
+        500 5th Ave. N. Seattle, WA 98109
+        <span class="footer--pipe"></span>
+        
+<span class="copyright">&copy; 2025 Gates Foundation. All rights reserved.</span>
+      </p>
+    </div>
+    
+
+<ul class="menu menu--footer">
+		<li class="menu__item">
+		<a class="no-underline menu__link menu-item menu-item-type-custom menu-item-object-custom menu-item-87" target="_self" href="https://www.gatesfoundation.org/Terms-of-Use"><span>Terms of Use</span></a>
+			</li>
+		<li class="menu__item">
+		<a class="no-underline menu__link menu-item menu-item-type-custom menu-item-object-custom menu-item-88" target="_self" href="https://www.gatesfoundation.org/Privacy-and-Cookies-Notice"><span>Privacy & Cookies Notice</span></a>
+			</li>
+		<li class="menu__item">
+		<a class="no-underline menu__link menu-item menu-item-type-custom menu-item-object-custom menu-item-89" target="_self" href="https://www.gatesfoundation.org/about/contact/reporting-scams"><span>Reporting Scams</span></a>
+			</li>
+	</ul>
+	      </div>
+  </footer>
+		
+	
+		</div>
+
+	
+<a href="#body_top" class="back-to-top" title="Back to top" aria-hidden="true" tabindex="-1">
+  <svg class="back-to-top__icon" role="img" aria-label="Back to top">
+    <use xlink:href="https://openaccess.gatesfoundation.org/wp-content/themes/gesso/images/sprite.artifact.svg#arrow"></use>
+  </svg>
+</a>
+
+					<!-- Google Tag Manager (noscript) snippet added by Site Kit -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGHQLPK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) snippet added by Site Kit -->
+		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" id="eio-lazy-load-js-before">
+/* <![CDATA[ */
+var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"threshold":0,"use_dpr":1};
+/* ]]> */
+</script>
+<script type="text/javascript" defer src="https://openaccess.gatesfoundation.org/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=821" id="eio-lazy-load-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="https://openaccess.gatesfoundation.org/wp-content/themes/gesso/js/dist/scripts.min.js?ver=1762440808" id="gessoscripts-js" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="gessoscripts-js-after">
+/* <![CDATA[ */
+!function(e,n,t){"use strict";var o="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i&display=swap",r="__3perf_googleFontsStylesheet";function c(e){(n.head||n.body).appendChild(e)}function a(){var e=n.createElement("link");e.href=o,e.rel="stylesheet",c(e)}function f(e){if(!n.getElementById(r)){var t=n.createElement("style");t.id=r,c(t)}n.getElementById(r).innerHTML=e}e.FontFace&&e.FontFace.prototype.hasOwnProperty("display")?(t[r]&&f(t[r]),fetch(o).then(function(e){return e.text()}).then(function(e){return e.replace(/@font-face {/g,"@font-face{font-display:swap;")}).then(function(e){return t[r]=e}).then(f).catch(a)):a()}(window,document,localStorage);
+/* ]]> */
+</script>
+
+	<!-- Start of gatesfoundationoa Zendesk Widget script -->
+	<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=dd975934-be73-4d21-adb8-b373ef536f1e"></script>
+	<!-- End of gatesfoundationoa Zendesk Widget script -->
+	</body>
+	</html>
+
+
+
